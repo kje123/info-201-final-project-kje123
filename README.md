@@ -29,8 +29,11 @@ For our project, we wanted to explore the field of environmental trends. All of 
 - Aims to investigate trajectories in climate change and analyze their relevance as potential socioeconomic barriers
 - https://climateanalytics.org/projects/embark-temporal-evolution-of-barriers-to-adaptation-and-their-relevance-for-climate-related-loss-and-damage/
 
+---
+
 # Our Data Sources
 
 ## Source One: US Pollution Data
 - Data Scraped from the US EPA database and hosted on kaggle.com
+- 29 features, _ columns
 - 
