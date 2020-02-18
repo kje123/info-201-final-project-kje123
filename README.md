@@ -20,4 +20,17 @@ For our project, we wanted to explore the field of environmental trends. All of 
 - http://climatechange.cs.umn.edu/
 
 ## Big Data and Climate Change
+- Written by Hossein Hassani, Xu Huang and Emmanuel Silva
+- Aims to explain how we can apply concepts of big data concepts to climate change research
+- https://www.mdpi.com/2504-2289/3/1/12/pdf
+
+## EmBARK Climate Analytics Project
+- Project funded by Oxford, ECI, and IIASA
+- Aims to investigate trajectories in climate change and analyze their relevance as potential socioeconomic barriers
+- https://climateanalytics.org/projects/embark-temporal-evolution-of-barriers-to-adaptation-and-their-relevance-for-climate-related-loss-and-damage/
+
+# Our Data Sources
+
+## Source One: US Pollution Data
+- Data Scraped from the US EPA database and hosted on kaggle.com
 - 
