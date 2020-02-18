@@ -33,7 +33,21 @@ For our project, we wanted to explore the field of environmental trends. All of 
 
 # Our Data Sources
 
-## Source One: US Pollution Data
+## Source One: US Pollution Data from 2000 to 2016
 - Data Scraped from the US EPA database and hosted on kaggle.com
-- 29 features, _ columns
-- 
+- Data gives statistics on pollution in major US cities
+- 29 features, 1,746,661 rows
+- https://www.kaggle.com/sogun3/uspollution
+
+### Questions we can answer from this dataset:
+- In what ways does pollution factor into climate change?
+- Does the amount of pollution in cities affect the temperature?
+- Can we use our data to predict future trends with climate change?
+
+## Source Two: Coral Bleaching dataset
+
+### Questions we can answer from this dataset:
+
+## Source Three: Global Land Temperatures dataset
+
+### Questions we can answer from this dataset
