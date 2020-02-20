@@ -44,7 +44,11 @@ For our project, we wanted to explore the field of environmental trends. All of 
 - Does the amount of pollution in cities affect the temperature?
 - Can we use our data to predict future trends with climate change?
 
-## Source Two: Coral Bleaching dataset
+## Source Two: Global Coral Bleaching dataset
+- Data scraped from the Harvard Database and hosted on the WorldFish Dataverse under Harvard Dataverse
+- Data is a compilation of statistics on the coral bleaching phenomenon on a global scale (information was sourced from UNEP-WCMC, Great Barrier Reef Marine Park Authority (GBRMPA), CoralList)
+- 28 features, 6,190 rows
+- https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/KUVQKY
 
 ### Questions we can answer from this dataset:
 
