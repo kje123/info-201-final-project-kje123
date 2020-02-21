@@ -64,3 +64,7 @@ their income group
 - CO2 emissions data: 59 features, 269 rows; income data: 5 features, 265 rows
 - https://data.worldbank.org/indicator/EN.ATM.CO2E.PC?end=2018&name_desc=false&start=1960&view=chart
 
+### Questions we can answer from this dataset
+- How do CO2 emissions compare for the US and the world? 
+- How does income group compare to a country's emissions?
+- Which countries have the largest growth in CO2 over time? 
