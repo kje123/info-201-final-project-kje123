@@ -55,11 +55,12 @@ For our project, we wanted to explore the field of environmental trends. All of 
 ## Source Three: Global Land Temperatures dataset
 
 ### Questions we can answer from this dataset
-<<<<<<< HEAD
 
 ## Source Four: World Countries: CO2 Emissions 1960 to 2014
 - Data from Oak Ridge National Laboratory in Tennessee and hosted on
 data.worldbank.org
-- CO2 emissions (metric tons per capita) of 264 countries 
-=======
->>>>>>> 0bf0ddd77a268e5f72c74a385ae4c91975c36570
+- Data consists of CO2 emissions (metric tons per capita) of 264 countries and
+their income group
+- CO2 emissions data: 59 features, 269 rows; income data: 5 features, 265 rows
+- https://data.worldbank.org/indicator/EN.ATM.CO2E.PC?end=2018&name_desc=false&start=1960&view=chart
+
