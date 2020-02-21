@@ -10,6 +10,9 @@ For our project, we wanted to explore the field of environmental trends. All of 
 - In what direction are the temperatures of areas moving? Is this directly caused by any change in climate?
 - At what scale (city, state, country) do changes in teperature become significant?
 - Can we use our data to predict future trends with climate change?
+- How do CO2 emissions compare for the US and the world? 
+- How does income group compare to a country's emissions?
+- Which countries have the largest growth in CO2 over time? 
 
 # Other data driven projects like ours:
 
