@@ -51,10 +51,18 @@ For our project, we wanted to explore the field of environmental trends. All of 
 - https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/KUVQKY
 
 ### Questions we can answer from this dataset:
+- Using coral reef statistics as an example, how significant has the effect of climate change been over time?
 
 ## Source Three: Global Land Temperatures dataset
+- Data repackaged from a compilation put together from the Berkeley Earth section of the Lawerence Berkeley National Laboratory, and hosted on kaggle.com
+- Data is a compilation of multiple sets that are sorted by scale (city, state, country, ect)
+- 9 features, 3,193 rows
+- https://www.kaggle.com/berkeleyearth/climate-change-earth-surface-temperature-data#GlobalTemperatures.csv
 
 ### Questions we can answer from this dataset
+- In what direction are the temperatures of areas moving? Is this directly caused by any change in climate?
+- At what scale (city, state, country) do changes in teperature become significant?
+- Can we use our data to predict future trends with climate change?
 
 ## Source Four: World Countries: CO2 Emissions 1960 to 2014
 - Data from Oak Ridge National Laboratory in Tennessee and hosted on
