@@ -1,7 +1,7 @@
 # Final Project
 
 # Our Domain Of Interest
-For our project, we wanted to explore the field of environmental trends. All of our group members are concerned about environmental trends that we are seeing, and so we wanted to use data to talk about what exactly is happening with our planet's environment and answer some questions we were curious about. One particular issue we were all concerned about is the effects of climate change, and what factors may be contributing to it.
+For our project, we wanted to explore the field of environmental trends. All of our group members are concerned about environmental trends that we are seeing, so we wanted to use data to talk and show about what exactly is happening with our planet's environment and answer some questions we were curious about. One particular issue we were all concerned about is the effects of climate change, and what factors may be contributing to it.
 
 ## Questions we want to answer
 - In what ways does pollution factor into climate change?
