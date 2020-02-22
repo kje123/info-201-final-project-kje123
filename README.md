@@ -12,10 +12,7 @@ For our project, we wanted to explore the field of **environmental trends**. All
 - How does income group compare to a country's emissions?
 - Which countries have the largest growth in CO2 over time?
 
----
-
-# Other data driven projects like ours:
-
+# Other Data Driven Projects Like Ours:
 ## [Understanding Climate Change: A Data Driven Approach](http://climatechange.cs.umn.edu/)
 - Funded by NSF
 - Involves four different universities
