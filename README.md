@@ -47,6 +47,8 @@ For our project, we wanted to explore the field of **environmental trends**. All
 
 ### Questions we can answer from this dataset:
 - Using coral reef statistics as an example, how significant has the effect of climate change been over time?
+- What year had the highest rate or highest number of instances of coral reef bleaching?
+- Which region/s had the highest amount of coral reef bleaching and does this have something to do with their position relative to the equator?
 
 ## Source Three: [Global Land Temperatures dataset](https://www.kaggle.com/berkeleyearth/climate-change-earth-surface-temperature-data#GlobalTemperatures.csv)
 - Data repackaged from a compilation put together from the Berkeley Earth section of the Lawerence Berkeley National Laboratory, and hosted on kaggle.com
