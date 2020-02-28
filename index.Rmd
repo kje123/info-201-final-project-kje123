@@ -8,7 +8,11 @@ output: html_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 library("knitr")
-source("analysis.R")
+source("summary_calc.R")
+source("summary_table.R")
+source("first_chart.R")
+source("second_chart.R")
+source("third_chart.R")
 ```
 
 ## R Markdown
