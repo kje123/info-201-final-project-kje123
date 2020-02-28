@@ -37,3 +37,6 @@ vignettes/*.pdf
 
 # Shiny token, see https://shiny.rstudio.com/articles/shinyapps.html
 rsconnect/
+
+# ignore dataset too big for repo
+data/pollution_us_2000_2016.csv
