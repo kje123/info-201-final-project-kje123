@@ -16,13 +16,23 @@ source("third_chart.R")
 ```
 
 ## The Problem
+<!-- An introduction of the problem domain and dataset -->
+
 
 ## Summary Information
+<!-- A paragraph of summary information, citing at least 5 values calculated
+from the data and includes information calculated by your summary information
+function -->
+
 
 ## Table
+<!-- A table of aggregated data (e.g., that has been "grouped" by one of your
+features) with pertinent observations found in it. # You must also describe why
+you included the table, and what information it reveals.-->
 
-## Chart 1
 
-## Chart 2
-
-## Chart 3
+## Charts
+<!-- Three different charts that display information from the data (what you
+visualize is up to you). Describe the purpose of each chart (e.g., "this chart
+was intended to show the relationship between..."), render each chart, and
+describe pertinent observations found in each chart. --> 
