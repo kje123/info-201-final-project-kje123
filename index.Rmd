@@ -1,6 +1,6 @@
 ---
 title: "Midpoint Deliverable"
-author: "Keith Ellingwood"
+author: "Keith Ellingwood, Sage Choi, Audrey Kho, Faduma"
 date: "2/24/2020"
 output: html_document
 ---
@@ -8,22 +8,23 @@ output: html_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 library("knitr")
-source("summary_calc.R")
-source("summary_table.R")
-source("first_chart.R")
-source("second_chart.R")
-source("third_chart.R")
+source("scripts/summary_calc.R")
+source("scripts/summary_table.R")
+source("scripts/first_chart.R")
+source("scripts/second_chart.R")
+source("scripts/third_chart.R")
+
+data <- read.csv("data/pollution_us_2000_2016.csv")
 ```
 
 ## The Problem
-<!-- An introduction of the problem domain and dataset -->
+For our project, we wanted to explore the field of environmental trends. All of our group members are concerned about environmental trends that we are seeing, especially because climate change seems to already have reached such an advanced stage while people in authority mostly continue to remain unbothered by it. We wanted to use data to learn more about it while also educating others about what exactly is happening with our planet's environment. By answering some of the questions we were curious about, we hope to contribute to the solution to this extremely urgent problem. One particular issue we were all concerned about is the effects of climate change, and what factors may be contributing to it.
 
-
+```{r, echo = FALSE}
+summary_list <- get_summary_info(data)
+```
 ## Summary Information
-<!-- A paragraph of summary information, citing at least 5 values calculated
-from the data and includes information calculated by your summary information
-function -->
-
+Our dataset we are using is information on pollution in the United States from the years 2000-2016. The data comes from kaggle.com, and was sourced from the Harvard Database and hosted on the WorldFish Dataverse under Harvard Dataverse. There are `r summary_list["columns"]` columns and `r summary_list["rows"]` rows in the data. The data contains lots of information about the locations in which the readings were taken, and includes things like the . There are  different cities in the US accounted for in this dataset. It focuses on 4 main types of greenhouse gasses: .
 
 ## Table
 <!-- A table of aggregated data (e.g., that has been "grouped" by one of your
