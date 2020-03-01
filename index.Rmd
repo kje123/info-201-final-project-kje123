@@ -38,6 +38,15 @@ you included the table, and what information it reveals.-->
 visualize is up to you). Describe the purpose of each chart (e.g., "this chart
 was intended to show the relationship between..."), render each chart, and
 describe pertinent observations found in each chart. --> 
+### Chart 1
+The line chart below shows the **average yearly emissions levels** of each of the four air pollutants in the dataset: _Carbon Monoxide (CO)_, _Sulfur Dioxide (SO2)_, _Ozone (O3)_, and _Nitrogen Dioxide (NO2)_. The data shown in this chart summarizes the emission levels of these harmful gases from the years 2000-2016 and is intended to show the gases' emission levels relative to each other. More importantly, this chart shows the changes in the average emission levels of each gas through the years.
+</p>
+As can be seen in the chart, the average _CO_ emissions have consistently been the highest by a couple hundred parts per billion throughout the years. The average _O3_, _NO2_, and _SO2_ emission levels have been quite close to each other all throughout and saw very slight changes, if any. On the other hand, the line representing the _CO_ emissions has clearly been experiencing a downward trend since the year 2000, which is great news for the environment. However, a slight rise can also be observed towards the end of the _CO_ emission graph, which could be an indicator of a shift into an upward trend in the following years.
+
+```{r fig.height = 6, fig.width = 10.5, echo= FALSE}
+chart_1 <- print(line_chart(data) + labs(y = "Average gas emission (ppb)", x = "Year") +
+          ggtitle("Average emission levels of O3, CO, NO2, and SO2 gases from 2000-2016"))
+```
 
 ### Chart 2
 Chart 2 is a pie chart intended to show the relationship between the averages of **four major pollutants**: Carbon Monoxide **(CO)**, Sulfur Dioxide **(SO2)**, Ozone **(O3)**, and Nitrogen Dioxide **(NO2)** in part per billion. 
