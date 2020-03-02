@@ -60,7 +60,7 @@ chart_2 <- pie_chart(data)
 ```
 
 ### Chart 3
-Chart 3 is a mapping of all the total emissions from 2000 to 2016. It is actually the same data used for our table above, but mapped onto a chloropleth map to show each state's differences comparatively. This map makes it clearly visual that **California's** total emissions outpace nearly every other state by a huge factor. What's interesting is that there are a few states that don't show up on the map, **Montana, Alabama and West Virginia**. Looking at the table we made earlier, there is no entries for these states either.
+Chart 3 is a mapping of all the total emissions from 2000 to 2016. It is actually the same data used for our table above, but mapped onto a chloropleth map to show each state's differences comparatively. This map makes it clearly visual that **California's** total emissions outpace nearly every other state by a huge factor. What's interesting is that there are a few states that don't show up on the map, **Montana, Mississippi, Nebraska and West Virginia**. Looking at the table we made earlier, there is no entries for these states either.
 
 ```{r, echo = FALSE}
 geo_chart(data)
