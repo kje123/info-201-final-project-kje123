@@ -8,10 +8,10 @@ overview <- tabPanel(
   "An overview"
 )
 page_one <- tabPanel(
-  "Mapping the emissions",
+  "Mapping the Emissions",
   titlePanel("A Map of the different types of emissions in the US"),
   
-  p("Chart 3 is a mapping of all the total emissions from 2000 to 2016.
+  p("This chart is a mapping of all the total emissions from 2000 to 2016.
     We included a widget that allows you to choose each individual different
     pollutant to see the impact of each one. The data is mapped onto a
     chloropleth map to show each state's differences comparatively. This
@@ -20,10 +20,10 @@ page_one <- tabPanel(
     see that California is consistantly producing the most emissions for
     almost all of the different types of pollutants, except for SO2, in which
     Pennsylvania is actually higher. We suspect this could be due to
-    Pennsylvania's long history of coal mining and burning for energy. What's interesting
-    is that there are a few states that don't show up on the map, Montana,
-    Mississippi, Nebraska and West Virginia. Looking at the table we made
-    earlier, there is no entries for these states either."),
+    Pennsylvania's long history of coal mining and burning for energy. What's
+    interesting is that there are a few states that don't show up on the map,
+    Montana, Mississippi, Nebraska and West Virginia. Looking at the table
+    we made earlier, there is no entries for these states either."),
   
   sidebarLayout(
     sidebarPanel(
@@ -41,12 +41,37 @@ page_one <- tabPanel(
     )
   )
 )
+
 page_two <- tabPanel(
-  "test"
+  "Emissions over time",
+  titlePanel("A Linechart of Emissions over time in the US"),
+  
+  p(),
+  
+  sidebarLayout(
+    sidebarPanel(),
+    
+    mainPanel(
+      plotOutput("linechart_em")
+    )
+  )
 )
+
 page_three <- tabPanel(
-  "Test"
+  "Distribution of Emissions",
+  titlePanel("A distribution of the different types of Pollutants"),
+  
+  p(),
+  
+  sidebarLayout(
+    sidebarPanel(),
+    
+    mainPanel(
+      plotOutput("piechart_em")
+    )
+  )
 )
+
 takeaways <- tabPanel(
   "Takeaways we have"
 )

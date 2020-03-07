@@ -38,4 +38,61 @@ my_server <- function(input, output) {
       colorbar(title = "Total Emissions (PPB)")
       
   })
+  
+  output$linechart_em <- renderPlot({
+    # code for line chart
+    first_chart_data <- df %>%
+      mutate(date = as.Date(df$Date.Local, "%Y-%m-%d")) %>%
+      arrange(desc(date)) %>%
+      mutate(O3_ppb = O3.Mean * 1000) %>%
+      mutate(CO_ppb = CO.Mean * 1000) %>%
+      group_by(date, City) %>%
+      summarize(
+        O3_levels = (mean(O3_ppb)), CO_levels = (mean(CO_ppb)),
+        NO2_levels = (mean(NO2.Mean)), SO2_levels = (mean(SO2.Mean))
+      ) %>%
+      mutate(year = format(date, "%Y")) %>%
+      group_by(year) %>%
+      summarize(
+        O3_levels = (mean(O3_levels)), CO_levels = (mean(CO_levels)),
+        NO2_levels = (mean(NO2_levels)), SO2_levels = (mean(SO2_levels))
+      )
+    
+    ggplot(first_chart_data, aes(x = as.numeric(year))) +
+      geom_line(aes(y = CO_levels), color = "steelblue2", size = 1.5) +
+      annotate(
+        geom = "text", x = 2016, y = 300, label = "  CO  ", hjust = "left"
+      ) +
+      geom_line(aes(y = O3_levels), color = "orchid4", size = 1.5) +
+      annotate(
+        geom = "text", x = 2016, y = 28, label = "  O3  ", hjust = "left"
+      ) +
+      geom_line(aes(y = NO2_levels), color = "forestgreen", size = 1.5) +
+      annotate(
+        geom = "text", x = 2016, y = 12, label = "  NO2  ", hjust = "left"
+      ) +
+      geom_line(aes(y = SO2_levels), color = "turquoise4", size = 1.5) +
+      annotate(
+        geom = "text", x = 2016, y = -3, label = "  SO2  ", hjust = "left"
+      )
+  })
+  
+  output$piechart_em <- renderPlot({
+    get_columns <- df %>%
+      select(NO2.Mean, O3.Mean, SO2.Mean, CO.Mean) %>% # Select pollutant columns
+      summarise_each(list(mean))                       # Pollutant averages
+    averages <- c(get_columns$NO2.Mean[[1]],           # 12.82
+                  get_columns$O3.Mean[[1]] * 1000,     # 26.12
+                  get_columns$SO2.Mean[[1]],           # 1.87
+                  get_columns$CO.Mean[[1]] * 1000)     # 368.22
+    big_4 <- colnames(get_columns)                     # Column names as vector
+    pct <- round(averages, 2)                          # Round pollutant averages
+    big_4 <- paste(big_4,
+                   paste("(mean:", paste0(pct, ")")))  # Pollutant average labels
+    pie(averages,
+        labels = big_4,
+        col = rainbow(length(big_4)),
+        main = "Four Major Pollutant Averages (ppb)")  # Pie chart with labels
+    # and title
+  })
 }
