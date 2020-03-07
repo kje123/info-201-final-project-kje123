@@ -5,8 +5,17 @@ library("plotly")
 library("lintr")
 
 overview <- tabPanel(
-  "An overview"
+  "An overview",
+  titlePanel("An Analytical Look at Emissions in the US"),
+  
+  img(src = "image.jpg"),
+  
+  h2("Questions we want to answer:"),
+  p("1. What states are contributing the most to US emissions?"),
+  p("2. How has the progression of emissions been from 2000 to 2016?"),
+  p("3. What pollutants are the most prevalent?")
 )
+
 page_one <- tabPanel(
   "Mapping the Emissions",
   titlePanel("A Map of the different types of emissions in the US"),
