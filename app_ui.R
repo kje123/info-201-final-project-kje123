@@ -43,6 +43,11 @@ page_one <- tabPanel(
                        O3 = "total_o3", NO2 = "total_no2",
                        Total = "total_emm")
       ),
+      radioButtons(
+        inputId = "color",
+        label = "Color Palette",
+        choices = c("viridis", "magma", "inferno", "plasma")
+      )
     ),
     
     mainPanel(

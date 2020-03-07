@@ -32,7 +32,8 @@ my_server <- function(input, output) {
       
     fig <- plot_geo(grouped, locationmode = "USA-states") %>%
       add_trace(
-        z = grouped[[input$var]], locations = ~state_abb, color = grouped[[input$var]]
+        z = grouped[[input$var]], locations = ~state_abb, color = grouped[[input$var]],
+        colors = input$color
       ) %>%
       layout(geo = g, title = "US Total Pollution 2000 - 2016") %>%
       colorbar(title = "Total Emissions (PPB)")
