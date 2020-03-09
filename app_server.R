@@ -32,7 +32,9 @@ my_server <- function(input, output) {
       
     fig <- plot_geo(grouped, locationmode = "USA-states") %>%
       add_trace(
-        z = grouped[[input$var]], locations = ~state_abb, color = grouped[[input$var]],
+        z = grouped[[input$var]],
+        locations = ~state_abb,
+        color = grouped[[input$var]],
         colors = input$color
       ) %>%
       layout(geo = g, title = "US Total Pollution 2000 - 2016") %>%
@@ -78,22 +80,22 @@ my_server <- function(input, output) {
       )
   })
   
-  output$piechart_em <- renderPlot({
+  output$piechart_em <- renderPlot({                   # Code for pie chart
     get_columns <- df %>%
-      select(NO2.Mean, O3.Mean, SO2.Mean, CO.Mean) %>% # Select pollutant columns
+      select(NO2.Mean, O3.Mean, SO2.Mean, CO.Mean) %>% # Pollutant columns
       summarise_each(list(mean))                       # Pollutant averages
     averages <- c(get_columns$NO2.Mean[[1]],           # 12.82
                   get_columns$O3.Mean[[1]] * 1000,     # 26.12
                   get_columns$SO2.Mean[[1]],           # 1.87
                   get_columns$CO.Mean[[1]] * 1000)     # 368.22
     big_4 <- colnames(get_columns)                     # Column names as vector
-    pct <- round(averages, 2)                          # Round pollutant averages
+    pct <- round(averages, 2)                          # Round averages
     big_4 <- paste(big_4,
-                   paste("(mean:", paste0(pct, ")")))  # Pollutant average labels
+                   paste("(mean:", paste0(pct, ")")))  # Averages as labels
+    
     pie(averages,
         labels = big_4,
-        col = rainbow(length(big_4)),
-        main = "Four Major Pollutant Averages (ppb)")  # Pie chart with labels
-    # and title
+        main = "Four Major Pollutant Averages (PPB)")  # Chart w labels & title
+        col = rainbow(length(big_4))
   })
 }
