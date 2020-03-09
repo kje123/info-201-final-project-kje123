@@ -25,4 +25,4 @@ get_summary_table <- function(df) {
 }
 
 names_col <- c("State", "Total CO", "Total NO2",
-               "Total O3", "Total SO2", "Total Emmissions")
+               "Total O3", "Total SO2", "Total Emissions")
