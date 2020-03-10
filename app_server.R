@@ -1,4 +1,5 @@
 library("shiny")
+library("data.table")
 library("dplyr")
 library("ggplot2")
 library("plotly")
@@ -59,25 +60,29 @@ my_server <- function(input, output) {
       summarize(
         O3_levels = (mean(O3_levels)), CO_levels = (mean(CO_levels)),
         NO2_levels = (mean(NO2_levels)), SO2_levels = (mean(SO2_levels))
-      )
+      ) %>%
+      filter(year %between% c(min(input$year), max(input$year)))
     
     ggplot(first_chart_data, aes(x = as.numeric(year))) +
       geom_line(aes(y = CO_levels), color = "steelblue2", size = 1.5) +
       annotate(
-        geom = "text", x = 2016, y = 300, label = "  CO  ", hjust = "left"
+        geom = "text", x = max(input$year), y = 300, label = "  CO  ", hjust = "left"
       ) +
       geom_line(aes(y = O3_levels), color = "orchid4", size = 1.5) +
       annotate(
-        geom = "text", x = 2016, y = 28, label = "  O3  ", hjust = "left"
+        geom = "text", x = max(input$year), y = 28, label = "  O3  ", hjust = "left"
       ) +
       geom_line(aes(y = NO2_levels), color = "forestgreen", size = 1.5) +
       annotate(
-        geom = "text", x = 2016, y = 12, label = "  NO2  ", hjust = "left"
+        geom = "text", x = max(input$year), y = 12, label = "  NO2  ", hjust = "left"
       ) +
       geom_line(aes(y = SO2_levels), color = "turquoise4", size = 1.5) +
       annotate(
-        geom = "text", x = 2016, y = -3, label = "  SO2  ", hjust = "left"
-      )
+        geom = "text", x = max(input$year), y = -3, label = "  SO2  ", hjust = "left"
+      ) +
+      ggtitle("Distribution of emissions over the years") + 
+      xlab("Year") + 
+      ylab("Emissions (PPB)")
   })
   
   output$piechart_em <- renderPlot({                   # Code for pie chart

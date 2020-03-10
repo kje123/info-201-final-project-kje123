@@ -87,7 +87,7 @@ page_two <- tabPanel(
         label = "Years",
         min = 2000,
         max = 2016,
-        value = c(2000:2016)
+        value = c(2000, 2016)
       )
     ),
     
@@ -120,7 +120,9 @@ page_three <- tabPanel(
       checkboxGroupInput(
         inputId = "pollutants",
         label = "Pollutants",
-        choices = c("CO.Mean", "SO2.Mean", "NO2.Mean", "O3.Mean")
+        choices = list(CO = "CO.Mean", SO2 = "SO2.Mean",
+                       NO2 = "NO2.Mean", O3 = "O3.Mean"),
+        selected = c("CO.Mean", "SO2.Mean", "NO2.Mean", "O3.Mean"),
       )
     ),
     
