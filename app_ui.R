@@ -81,7 +81,15 @@ page_two <- tabPanel(
     following years."),
   
   sidebarLayout(
-    sidebarPanel(),
+    sidebarPanel(
+      sliderInput(
+        inputId = "year",
+        label = "Years",
+        min = 2000,
+        max = 2016,
+        value = c(2000:2016)
+      )
+    ),
     
     mainPanel(
       plotOutput("linechart_em")
@@ -108,7 +116,13 @@ page_three <- tabPanel(
     their rank."),
   
   sidebarLayout(
-    sidebarPanel(),
+    sidebarPanel(
+      checkboxGroupInput(
+        inputId = "pollutants",
+        label = "Pollutants",
+        choices = c("CO.Mean", "SO2.Mean", "NO2.Mean", "O3.Mean")
+      )
+    ),
     
     mainPanel(
       plotOutput("piechart_em")

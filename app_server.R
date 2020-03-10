@@ -83,19 +83,19 @@ my_server <- function(input, output) {
   output$piechart_em <- renderPlot({                   # Code for pie chart
     get_columns <- df %>%
       select(NO2.Mean, O3.Mean, SO2.Mean, CO.Mean) %>% # Pollutant columns
-      summarise_each(list(mean))                       # Pollutant averages
-    averages <- c(get_columns$NO2.Mean[[1]],           # 12.82
-                  get_columns$O3.Mean[[1]] * 1000,     # 26.12
-                  get_columns$SO2.Mean[[1]],           # 1.87
-                  get_columns$CO.Mean[[1]] * 1000)     # 368.22
+      summarise_each(list(mean)) %>%
+      mutate(O3.Mean = (O3.Mean * 1000)) %>%
+      mutate(CO.Mean = (CO.Mean * 1000)) %>%
+      select(one_of(input$pollutants))
+    
     big_4 <- colnames(get_columns)                     # Column names as vector
-    pct <- round(averages, 2)                          # Round averages
+    pct <- round(get_columns, 2)                          # Round averages
     big_4 <- paste(big_4,
                    paste("(mean:", paste0(pct, ")")))  # Averages as labels
     
-    pie(averages,
+    pie(unlist(get_columns, use.names=FALSE),
         labels = big_4,
-        main = "Four Major Pollutant Averages (PPB)")  # Chart w labels & title
-        col = rainbow(length(big_4))
+        main = "Four Major Pollutant Averages (PPB)",  # Chart w labels & title
+        col = c("green", "red", "blue", "orange"))
   })
 }
