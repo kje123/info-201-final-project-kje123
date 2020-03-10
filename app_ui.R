@@ -14,15 +14,28 @@ overview <- tabPanel(
   p("1. What states are contributing the most to US emissions?"),
   p("2. How has the progression of emissions been from 2000 to 2016?"),
   p("3. What pollutants are the most prevalent?"),
-  p("To answer these questions, our group has created 3 different data
+  
+  p("To answer these important questions, our group has created 3 data
      visualizations in the second, third, and fourth tabs of this web
      application. Each of the visualizations display values pulled from a
      dataset compiled by the", strong(" U.S. Environmental Protection Agency
-     (US EPA)"), "containing the", strong("emission levels of four different
-     chemical compounds"), "that contribute to the", strong("air pollution in
-     each U.S. state from the years 2000-2016,"), "namely: ",
-     em("Carbon Monoxide (CO),"), em("Sulfur Dioxide (SO2),"),
-     em("Ozone (O3),"), "and", em("Nitrogen Dioxide (NO2)."), "")
+     (US EPA)."), "The dataset contains information about", strong("emission
+     levels of four different chemical compounds"), "that have contributed to
+     the", strong("air pollution in each U.S. state in the years 2000-2016,"),
+     "namely: ", em("Carbon Monoxide (CO),"), em("Sulfur Dioxide (SO2),"),
+     em("Ozone (O3),"), "and", em("Nitrogen Dioxide (NO2)"), "."),
+  
+  p("The", strong("\"Mapping the Emissions\" tab"), "contains our first
+    visualization: a choropleth map, which is a color-coded map indicating
+    the amount of the four air pollutant (individually and in total) that
+    each US state is responsible for. Next, the", strong("\"Emissions over
+    time\" tab"), "contains a line chart representing the average levels of
+    each of the four pollutant compounds recorded in the atmosphere of
+    the United States as a whole throughout the years 2000-2016. Lastly, the",
+    strong("\"Distribution of Emissions\" tab"),"contains a pie chart that
+    presenting the average daily levels of each of the four compounds in
+    relation to each other that were recorded in the atmosphere across the
+    United States from 2000-2016.")
 )
 
 page_one <- tabPanel(
