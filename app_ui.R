@@ -6,14 +6,23 @@ library("lintr")
 
 overview <- tabPanel(
   "An overview",
-  titlePanel("An Analytical Look at Emissions in the US"),
+  titlePanel("An Analytical Look at Gas Emission Levels in the US"),
   
   img(src = "image.jpg"),
   
   h2("Questions we want to answer:"),
   p("1. What states are contributing the most to US emissions?"),
   p("2. How has the progression of emissions been from 2000 to 2016?"),
-  p("3. What pollutants are the most prevalent?")
+  p("3. What pollutants are the most prevalent?"),
+  p("To answer these questions, our group has created 3 different data
+     visualizations in the second, third, and fourth tabs of this web
+     application. Each of the visualizations display values pulled from a
+     dataset compiled by the", strong(" U.S. Environmental Protection Agency
+     (US EPA)"), "containing the", strong("emission levels of four different
+     chemical compounds"), "that contribute to the", strong("air pollution in
+     each U.S. state from the years 2000-2016,"), "namely: ",
+     em("Carbon Monoxide (CO),"), em("Sulfur Dioxide (SO2),"),
+     em("Ozone (O3),"), "and", em("Nitrogen Dioxide (NO2)."), "")
 )
 
 page_one <- tabPanel(
