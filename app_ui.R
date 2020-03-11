@@ -222,11 +222,14 @@ takeaways <- tabPanel(
 
 )
 
-my_ui <- navbarPage(
+my_ui <- fluidPage(
+  includeCSS("style.css"),
+  navbarPage(
   "Major U.S. Pollutants",
   overview,
   page_one,
   page_two,
   page_three,
   takeaways
+  )
 )
