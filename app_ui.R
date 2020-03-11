@@ -11,7 +11,7 @@ overview <- tabPanel(
   img(src = "image.jpg", class = "center"),
 
   h2("Questions we want to answer:"),
-  tag$p(id = "skip_indent",
+  p(
     "1. What states are contributing the most to U.S. emissions?", br(),
     "2. How has the progression of emissions been from 2000 to 2016?", br(),
     "3. What pollutants are the most prevalent?"
