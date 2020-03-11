@@ -94,7 +94,7 @@ my_server <- function(input, output) {
       select(one_of(input$pollutants))
     
     big_4 <- colnames(get_columns)                     # Column names as vector
-    pct <- round(get_columns, 2)                          # Round averages
+    pct <- round(get_columns, 2)                       # Round averages
     big_4 <- paste(big_4,
                    paste("(mean:", paste0(pct, ")")))  # Averages as labels
     
