@@ -1,10 +1,11 @@
 /* Elements for level 2 headers */
 h2 {
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Roboto";
   text-align: center;
   color: black;
   font-weight: bold;
-  font-size: 300px
+  font-size: 50px;
+  margin-bottom: 30px;
 }
 
 /* Elements for paragraphs*/
@@ -13,18 +14,22 @@ p {
   text-align: justify;
   font-size: 18px;
   color: black;
-  margin: 60px;
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-bottom: 20px;
   text-justify: inter-word;
-<<<<<<< HEAD
-  border:1px powderblue
-=======
-  font-size: 160px;
-  border: 1px powderblue
->>>>>>> 05b8a5224739d9b0318e03527300ac078952e8cb
+  text-indent: 50px;
 }
 
-.hangingindent {
-  padding-left: 10px ;
+#skip_indent {
+  font-family: "Times New Roman", Times, serif;
+  text-align: justify;
+  font-size: 18px;
+  color: black;
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-bottom: 20px;
+  text-justify: inter-word;
 }
 
 /* Elements with a title attribute will be this color */
@@ -39,28 +44,7 @@ a[title] {
   margin-right: auto;
   width: 50%;
 }
-table, th, td {
-  border: 1px solid black;
-}
-table {
-  width: 100%;
-}
 
-th {
-  height: 50px;
-}
-th {
-  text-align: left;
-}
-td {
-  height: 50px;
-  vertical-align: bottom;
-}
-th, td {
-  padding: 15px;
-  text-align: left;
-}
-th {
-  background-color: #FF8C00;
-  color: white;
+div {
+  padding-bottom: 15px;
 }
