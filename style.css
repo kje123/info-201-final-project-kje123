@@ -11,6 +11,7 @@ p {
   text-align: center;
   color: black;
   background-color: #e6e6e6;
+  margin: 35px;
 }
 
 /* Combines the three above into one thing */
@@ -24,4 +25,10 @@ a[title] {
   color: #00CCFF;
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 
