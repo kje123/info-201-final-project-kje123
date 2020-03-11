@@ -164,11 +164,14 @@ takeaways <- tabPanel(
   p(em("1. What states are contributing the most to US emissions?")),
   p(em("2. How has the progression of emissions been from 2000 to 2016?")),
   p(em("3. What pollutants are the most prevalent?")),
-  p("Individually, each graph pertains to one of the aforementioned questions
-    and their interactive abilities. Outside of the graphs and dataset, we were
-    able to learn some more about which pollutants are most prevelant and the
-    states that they tend to be in. By learning this, the U.S. can get a broad
-    overview of the most damaging pollutants.")
+  p("Individually, each question pertains to one of the aforementioned graphs
+    and their interactive abilities. Our data visualizations helped us to
+    quantitatively convey and to concretely interpret the data that was
+    provided to us in the U.S. emissions dataset of 2000-2016. Through our
+    analysis of the graphs and dataset, we were able to learn some more about
+    which pollutants are most prevelant and the states that they tend to be in.
+    By learning this, the U.S. can get a broad overview of the most damaging
+    pollutants.")
 )
 
 my_ui <- navbarPage(
