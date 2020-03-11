@@ -24,7 +24,6 @@ overview <- tabPanel(
      the", strong("air pollution in each U.S. state in the years 2000-2016,"),
      "namely: ", em("Carbon Monoxide (CO),"), em("Sulfur Dioxide (SO2),"),
      em("Ozone (O3),"), "and", em("Nitrogen Dioxide (NO2)"), "."),
-  
   p("The", strong("\"Mapping the Emissions\" tab"), "contains our first
     visualization: a choropleth map, which is a color-coded map indicating
     the amount of the four air pollutant (individually and in total) that
@@ -35,7 +34,39 @@ overview <- tabPanel(
     strong("\"Distribution of Emissions\" tab"),"contains a pie chart that
     presenting the average daily levels of each of the four compounds in
     relation to each other that were recorded in the atmosphere across the
-    United States from 2000-2016.")
+    United States from 2000-2016."),
+  
+  h2("Background information"),
+  p("Before going onto the next few tabs, we would like to provide a bit of
+    a background on the nature of the 4 air pollutants our data focuses on.
+    The first gas,", strong("Carbon monoxide (CO)"), "is probably the most
+    well-known out of the four as the cause of the most fatal type of air
+    poisoning in humans. CO is produced by several natural, organic processes,
+    including natural human, plant, and geological activity. However, CO levels
+    are estimated to be doubled by the burning of biomass and fossil fuels that
+    power most vehicles and machines. CO is not a greenhouse gas but it greatly
+    disrupts the regulation and sometimes even elevates other greenhouse gas
+    concentrations in our atmosphere. Second, we have", strong("Sulfur Dioxide
+    (SO2)"), ", which is produced mainly by volcanic eruptions, the burning of
+    fossil fuels contaminated with sulfur compounds, and as a byproduct of
+    copper extractions. SO2 is primarily responsible for acid rain, which has
+    caused destruction in several structures and increased acidity in bodies of
+    water, therefore harming aquatic life. The third pollutant is", 
+    strong("Ozone (O3)"), ", which also happens to be the primary component of
+    the ozone layer in our stratosphere. While O3 is essential for the Earth's
+    protection against the harmful UV rays of the sun, it is an extremely
+    harmful respiratory hazard and pollutant in concentrations of 100 ppb and
+    above on the ground level. It is also produced mainly by the burning of
+    fossil fuels and aside from health hazards, it has also been observed to
+    have some relationship with heat waves. Lastly, we have", strong("Nitrogen
+    Dioxide (NO2)"), ", which is a byproduct in the production of fertilizers,
+    but is also produced by the burning of fossil fuels and a few natural
+    processes. Similar to the other gases, NO2 is also known to cause
+    respiratory problems, most notably asthma, and also plays a role in acid
+    rain."),
+  p("To learn more about the atmospheric levels of these four air pollutants in
+    the U.S. and their trends across time, please visit the next few tabs of
+    this web application to view the visualizations of the data.")
 )
 
 page_one <- tabPanel(
