@@ -44,13 +44,7 @@ a[title] {
   margin-right: auto;
   width: 50%;
 }
-<<<<<<< HEAD
 
 div {
   padding-bottom: 15px;
-=======
-li:hover {
-  background-color: rgb(231, 231, 231);
-  transition: 0.5s;
->>>>>>> 903b1334c1c231ca861c391e745862d1349eaaf1
-}
+
