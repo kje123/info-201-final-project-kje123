@@ -164,35 +164,31 @@ takeaways <- tabPanel(
   p(em("1. What states are contributing the most to US emissions?")),
   p(em("2. How has the progression of emissions been from 2000 to 2016?")),
   p(em("3. What pollutants are the most prevalent?")),
-<<<<<<< HEAD
+
   p("Individually, each question pertains to one of the aforementioned graphs
     and their interactive abilities. Our data visualizations helped us to
-    quantitatively convey and to concretely interpret the data that was
-    provided to us in the U.S. emissions dataset of 2000-2016. Through our
-    analysis of the graphs and dataset, we were able to learn some more about
-    which pollutants are most prevelant and the states that they tend to be in.
-    By learning this, the U.S. can get a broad overview of the most damaging
-    pollutants.")
-=======
-  p("Individually, each graph pertains to one of the aforementioned questions
-    and their interactive abilities. Outside of the graphs and dataset, we
-    were able to learn some more about which pollutants are most prevelant and
-    the states that they tend to be in. By learning this, the U.S. can get a
-    broad overview of the most damaging pollutants."),
+    quantitatively and visually represent the data that was provided to us in
+    the U.S. emissions dataset of 2000-2016. Through our analysis of the graphs
+    and dataset, we were able to learn some more about which pollutants are
+    most prevelant and the states that they tend to be in. By learning this,
+    the U.S. can get a broad overview of the most damaging pollutants."),
   p("From our findings, we saw that California is consistantly the leader in
     emissions in the US, although we also noticed Pennsylvania is fairly
-    high as well, assumedly due to the coal industry prevalence there.
-    We also saw that Carbon Monoxide is the most prevalent pollutant in the
-    US, and although the amount of CO in the atmosphere in the environment
-    has dropped significantly since 2000, we are seeing that the CO emissions
-    have been increasing in the last 5 years. All the other pollutants
-    we had data on, however, have been mostly staying around the same
-    saturation in our atmosphere, which is good."),
+    high as well, assumedly due to the coal industry prevalence there. We 
+    also saw that Carbon Monoxide is the most prevalent pollutant in the U.S.
+    and although the amount of CO in the atmosphere in the environment has 
+    dropped significantly since 2000, we are seeing that the CO emissions
+    have been increasing in the last 5 years. All the other pollutants we
+    had data on have been mostly stayed around the same saturation in our
+    atmosphere, which may seem like a good thing at face value, but can still
+    be dangerous, given the nature of all 4 gases."),
   p("From this analysis, we can conclude that we need to focus on decreasing
-    our Carbon Monoxide emissions, and we need to worry about all of the
-    emissions coming out of California. Using this knowledge, we can move
-    forward with more focused solutions in the future.")
->>>>>>> b655edc5d806870b96bdbb4d440ecc44aa46c32f
+    our overall atmospheric emissions levels, focusing especially on Carbon
+    Monoxide. We also need to worry about all of the emissions coming out of
+    California. Using this knowledge, we can move forward with more focused
+    solutions and push for progress in these areas for the betterment of our
+    environment and our future.")
+
 )
 
 my_ui <- navbarPage(
