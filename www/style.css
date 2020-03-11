@@ -1,10 +1,3 @@
-/* Elements for level 1 headers */
-h1 {
-  font-family: "Times New Roman", Times, serif;
-  text-align: center;
-  color: black;
-}
-
 /* Elements for level 2 headers */
 h2 {
   font-family: "Times New Roman", Times, serif;
@@ -19,15 +12,6 @@ p {
   color: black;
   background-color: #e6e6e6;
 }
-
-li {
-   font-size:100px;        /* Font size */
-   border:1px solid gray;  /* A "1 pixel solid gray" border */
-   font-family:sans-serif; /* Use a "sans-serif" font face */
-   margin-top:10px;        /* Put 10 pixels above each element */
-   opacity:.3;             /* Turn down the opacity (aka, alpha) to .3 */
-}
-
 
 /* Combines the three above into one thing */
 /* h1, h2, p {
