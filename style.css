@@ -15,7 +15,6 @@ p {
   color: black;
   margin: 60px;
   text-justify: inter-word;
-  font-size: 160px
   border:1px powderblue
 }
 
@@ -33,4 +32,3 @@ a[title] {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-}
