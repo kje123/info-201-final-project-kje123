@@ -3,19 +3,17 @@ h2 {
   font-family: "Times New Roman", Times, serif;
   text-align: center;
   color: black;
+  font-weight: bold;
 }
 
 /* Elements for paragraphs*/
 p {
   font-family: "Times New Roman", Times, serif;
-  text-align: left;
+  text-align: justify;
   font-size: 18px;
   color: black;
-<<<<<<< HEAD
-  background-color: #e6e6e6;
-  margin: 35px;
-=======
->>>>>>> 08781d521f837d10f904224453d1c7b6f486626b
+  margin: 60px;
+  text-justify: inter-word;
 }
 
 .hangingindent {
