@@ -234,7 +234,8 @@ takeaways <- tabPanel(
     have been increasing in the last 5 years. All the other pollutants we
     had data on have been mostly stayed around the same saturation in our
     atmosphere, which may seem like a good thing at face value, but can still
-    be dangerous, given the nature of all 4 gases."),
+    be dangerous and should be closely monitored, given the nature of all 4
+    gases."),
   p("From this analysis, we can conclude that we need to focus on decreasing
     our overall atmospheric emissions levels, focusing especially on Carbon
     Monoxide. We also need to worry about all of the emissions coming out of
