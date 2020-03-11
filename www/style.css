@@ -1,4 +1,34 @@
+/* Elements for level 1 headers */
 h1 {
-color: orange;
-text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  color: black;
 }
+
+/* Elements for level 2 headers */
+h2 {
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  color: black;
+}
+
+/* Elements for paragraphs*/
+p {
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  color: black;
+  background-color: gray;
+}
+
+/* Combines the three above into one thing */
+/* h1, h2, p {
+  text-align: center;
+  color: red;
+} */
+
+/* Elements with a title attribute will be this color */
+a[title] {
+  color: #00CCFF;
+}
+
+
