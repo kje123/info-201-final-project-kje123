@@ -15,8 +15,8 @@ p {
   color: black;
   margin: 60px;
   text-justify: inter-word;
-  font-size: 160px
-  border:1px powderblue
+  font-size: 160px;
+  border: 1px powderblue
 }
 
 .hangingindent {
