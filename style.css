@@ -4,6 +4,7 @@ h2 {
   text-align: center;
   color: black;
   font-weight: bold;
+  font-size: 300px
 }
 
 /* Elements for paragraphs*/
@@ -14,6 +15,8 @@ p {
   color: black;
   margin: 60px;
   text-justify: inter-word;
+  font-size: 160px
+  border:1px powderblue
 }
 
 .hangingindent {
@@ -32,4 +35,3 @@ a[title] {
   margin-right: auto;
   width: 50%;
 }
-
