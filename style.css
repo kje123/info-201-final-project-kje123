@@ -8,17 +8,19 @@ h2 {
 /* Elements for paragraphs*/
 p {
   font-family: "Times New Roman", Times, serif;
-  text-align: center;
+  text-align: left;
+  font-size: 18px;
   color: black;
+<<<<<<< HEAD
   background-color: #e6e6e6;
   margin: 35px;
+=======
+>>>>>>> 08781d521f837d10f904224453d1c7b6f486626b
 }
 
-/* Combines the three above into one thing */
-/* h1, h2, p {
-  text-align: center;
-  color: red;
-} */
+.hangingindent {
+  padding-left: 10px ;
+}
 
 /* Elements with a title attribute will be this color */
 a[title] {

@@ -11,8 +11,8 @@ overview <- tabPanel(
   img(src = "image.jpg", class = "center"),
   
   h2("Questions we want to answer:"),
-  p("1. What states are contributing the most to US emissions? <br>
-    2. How has the progression of emissions been from 2000 to 2016?"),
+  p("1. What states are contributing the most to US emissions?"),
+  p("2. How has the progression of emissions been from 2000 to 2016?"),
   p("3. What pollutants are the most prevalent?"),
   
   p("To answer these important questions, our group has created 3 data
