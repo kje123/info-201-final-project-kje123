@@ -6,20 +6,20 @@ library("lintr")
 
 overview <- tabPanel(
   "An overview",
-  titlePanel("An Analytical Look at Gas Emission Levels in the US"),
-  
+  titlePanel("An Analytical Look at Gas Emission Levels in the U.S."),
+
   img(src = "image.jpg", class = "center"),
-  
+
   h2("Questions we want to answer:"),
-  p("1. What states are contributing the most to US emissions?"),
+  p("1. What states are contributing the most to U.S. emissions?"),
   p("2. How has the progression of emissions been from 2000 to 2016?"),
   p("3. What pollutants are the most prevalent?"),
-  
+
   p("To answer these important questions, our group has created 3 data
      visualizations in the second, third, and fourth tabs of this web
      application. Each of the visualizations display values pulled from a
      dataset compiled by the", strong(" U.S. Environmental Protection Agency
-     (US EPA)."), "The dataset contains information about", strong("emission
+     (U.S. EPA)."), "The dataset contains information about", strong("emission
      levels of four different chemical compounds"), "that have contributed to
      the", strong("air pollution in each U.S. state in the years 2000-2016,"),
      "namely: ", em("Carbon Monoxide (CO),"), em("Sulfur Dioxide (SO2),"),
@@ -27,15 +27,15 @@ overview <- tabPanel(
   p("The", strong("\"Mapping the Emissions\" tab"), "contains our first
     visualization: a choropleth map, which is a color-coded map indicating
     the amount of the four air pollutant (individually and in total) that
-    each US state is responsible for. Next, the", strong("\"Emissions over
+    each U.S. state is responsible for. Next, the", strong("\"Emissions over
     time\" tab"), "contains a line chart representing the average levels of
     each of the four pollutant compounds recorded in the atmosphere of
     the United States as a whole throughout the years 2000-2016. Lastly, the",
-    strong("\"Distribution of Emissions\" tab"),"contains a pie chart that
+    strong("\"Distribution of Emissions\" tab"), "contains a pie chart that
     presenting the average daily levels of each of the four compounds in
     relation to each other that were recorded in the atmosphere across the
     United States from 2000-2016."),
-  
+
   h2("Background information"),
   p("Before going onto the next few tabs, we would like to provide a bit of
     a background on the nature of the 4 air pollutants our data focuses on.
@@ -51,7 +51,7 @@ overview <- tabPanel(
     fossil fuels contaminated with sulfur compounds, and as a byproduct of
     copper extractions. SO2 is primarily responsible for acid rain, which has
     caused destruction in several structures and increased acidity in bodies of
-    water, therefore harming aquatic life. The third pollutant is", 
+    water, therefore harming aquatic life. The third pollutant is",
     strong("Ozone (O3)"), ", which also happens to be the primary component of
     the ozone layer in our stratosphere. While O3 is essential for the Earth's
     protection against the harmful UV rays of the sun, it is an extremely
@@ -71,8 +71,8 @@ overview <- tabPanel(
 
 page_one <- tabPanel(
   "Mapping the Emissions",
-  titlePanel("A Map of the different types of emissions in the US"),
-  
+  titlePanel("A Map of the Different Types of Emissions in the U.S."),
+
   p("This chart is a mapping of all the total emissions from 2000 to 2016.
     We included a widget that allows you to choose each individual different
     pollutant to see the impact of each one. The data is mapped onto a
@@ -86,7 +86,7 @@ page_one <- tabPanel(
     interesting is that there are a few states that don't show up on the map,",
     strong("Montana, Mississippi, Nebraska and West Virginia."), "Looking at
     the table we made earlier, there is no entries for these states either."),
-  
+
   sidebarLayout(
     sidebarPanel(
       selectInput(
@@ -102,7 +102,7 @@ page_one <- tabPanel(
         choices = c("viridis", "magma", "inferno", "plasma")
       )
     ),
-    
+
     mainPanel(
       plotlyOutput("map_em")
     )
@@ -111,8 +111,8 @@ page_one <- tabPanel(
 
 page_two <- tabPanel(
   "Emissions over time",
-  titlePanel("A Linechart of Emissions over time in the US"),
-  
+  titlePanel("A Linechart of Emissions Over Time in the U.S."),
+
   p("This chart shows the", strong("average yearly emissions levels"), "of each
     of the four air pollutants in the dataset:", em("Carbon Monoxide (CO),"),
     em("Sulfur Dioxide (SO2),"), em("Ozone (O3),"), "and", em("Nitrogen Dioxide
@@ -121,7 +121,7 @@ page_two <- tabPanel(
     to show the gases' emission levels", em("relative to each other."), "More
     importantly, this chart shows the changes in the average emission levels of
     each gas through the years."),
-  
+
   p("As can be seen in the chart, the average", em("CO"), "emissions have
     consistently been the highest by a couple hundred parts per billion
     throughout the years. The average", em("O3, NO2, and SO2"),
@@ -132,7 +132,7 @@ page_two <- tabPanel(
     rise can also be observed towards the end of the", em("CO"), "emission
     graph, which could be an indicator of a shift into an upward trend in the
     following years."),
-  
+
   sidebarLayout(
     sidebarPanel(
       sliderInput(
@@ -143,7 +143,7 @@ page_two <- tabPanel(
         value = c(2000, 2016)
       )
     ),
-    
+
     mainPanel(
       plotOutput("linechart_em")
     )
@@ -153,12 +153,12 @@ page_two <- tabPanel(
 page_three <- tabPanel(
   "Distribution of Emissions",
   titlePanel("A distribution of the different types of Pollutants"),
-  
+
   p("This chart is a pie chart intended to show the relationship between the
     averages of", strong("four major pollutants:"), "Carbon Monoxide",
     strong("(CO)"), "Sulfur Dioxide", strong("(SO2)"), "Ozone", strong("(O3)"),
     "and Nitrogen Dioxide", strong("(NO2)"), "in parts per billion."),
-  
+
   p("When observing the chart below, three observations come into view. The
     first is that", strong("Carbon Monoxide has the largest mean."), "By
     knowing which major pollutant has the highest average out of", em("1.75
@@ -167,7 +167,7 @@ page_three <- tabPanel(
     researchers an easier time comparing how the pollutants stack up with each
     other. By doing this, these pollutants can possibly be prioritized based on
     their rank."),
-  
+
   sidebarLayout(
     sidebarPanel(
       checkboxGroupInput(
@@ -178,7 +178,7 @@ page_three <- tabPanel(
         selected = c("CO.Mean", "SO2.Mean", "NO2.Mean", "O3.Mean"),
       )
     ),
-    
+
     mainPanel(
       plotOutput("piechart_em")
     )
@@ -188,11 +188,11 @@ page_three <- tabPanel(
 takeaways <- tabPanel(
   "Takeaways we have",
   titlePanel("What we learned from this data", windowTitle = "Takeaways"),
-  
+
   p("After analyzing the original dataset and creating separate graphs to
     display the data in different ways, we were able to answer the three
     questions we had in the beginning:"),
-  p(em("1. What states are contributing the most to US emissions?")),
+  p(em("1. What states are contributing the most to U.S. emissions?")),
   p(em("2. How has the progression of emissions been from 2000 to 2016?")),
   p(em("3. What pollutants are the most prevalent?")),
 
@@ -204,10 +204,10 @@ takeaways <- tabPanel(
     most prevelant and the states that they tend to be in. By learning this,
     the U.S. can get a broad overview of the most damaging pollutants."),
   p("From our findings, we saw that California is consistantly the leader in
-    emissions in the US, although we also noticed Pennsylvania is fairly
-    high as well, assumedly due to the coal industry prevalence there. We 
+    emissions in the U.S., although we also noticed Pennsylvania is fairly
+    high as well, assumedly due to the coal industry prevalence there. We
     also saw that Carbon Monoxide is the most prevalent pollutant in the U.S.
-    and although the amount of CO in the atmosphere in the environment has 
+    and although the amount of CO in the atmosphere in the environment has
     dropped significantly since 2000, we are seeing that the CO emissions
     have been increasing in the last 5 years. All the other pollutants we
     had data on have been mostly stayed around the same saturation in our
