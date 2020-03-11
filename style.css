@@ -15,7 +15,12 @@ p {
   color: black;
   margin: 60px;
   text-justify: inter-word;
+<<<<<<< HEAD
   border:1px powderblue
+=======
+  font-size: 160px;
+  border: 1px powderblue
+>>>>>>> 05b8a5224739d9b0318e03527300ac078952e8cb
 }
 
 .hangingindent {
@@ -27,9 +32,35 @@ a[title] {
   color: #00CCFF;
 }
 
+/*centering the image*/
 .center {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+}
+table, th, td {
+  border: 1px solid black;
+}
+table {
+  width: 100%;
+}
+
+th {
+  height: 50px;
+}
+th {
+  text-align: left;
+}
+td {
+  height: 50px;
+  vertical-align: bottom;
+}
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+th {
+  background-color: #FF8C00;
+  color: white;
 }
