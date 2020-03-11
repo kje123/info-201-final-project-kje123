@@ -7,6 +7,7 @@ library("lintr")
 overview <- tabPanel(
   "An overview",
   titlePanel("An Analytical Look at Gas Emission Levels in the U.S."),
+  p("By Keith Ellingwood, Audrey Ko, Sage Choi, Faduma Edey"),
 
   img(src = "image.jpg", class = "center"),
 
